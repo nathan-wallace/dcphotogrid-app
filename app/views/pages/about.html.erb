@@ -13,6 +13,7 @@
 				Looks like you are ready to submit to the DC Photo Grid Project. 
 			</strong>
 			<br>
+			<div id="row" style="margin-top:20px;">
 			<div class="span4">
 			  		<p>
 						<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
@@ -31,11 +32,14 @@
 				</div>
 				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
 				</div>
+			</div>	
 		<% else %>
 			<strong> 
 				Join today and submit your photos to the DC Photo Grid Project. 
 			</strong>
 			<br>
+			<div id="row" style="margin-top:20px;">
+
 			<div class="span4">
 			  		<p>
 						<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
@@ -54,6 +58,7 @@
 				</div>
 				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
 				</div>
+			</div>	
 		<% end %>
 	</div>
 	<br>
