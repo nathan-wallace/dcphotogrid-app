@@ -7,28 +7,30 @@
 <p>
 	<b>Billy Friebele</b> lives and works in Washington, DC. He received an MFA in Studio Art from the Maryland Institute College of Art. Billy has exhibited in Baltimore, MD; New York, NY; Colorado; St. Louis, MO; Detroit, MI and Washington, DC among other places. Friebele’s work examines the intersection of new media and public space. He teaches as an Assistant Professor of Digital Media at St. Mary's College of Maryland.
 </p>
-<p>
-	DC Photo Grid is a <%= link_to "Ruby on Rails","http://rubyonrails.org" %>
-		 application 
-</p>
+	<div>
+		<% if user_signed_in? %>
+			<strong> 
+				Looks like you are ready to submit to the DC Photo Grid Project. 
+			</strong>
+			<br>
 			<p>
-				<%= link_to "Upload!", new_pin_path, class: "btn btn-warning btn-large" %>
+				<%= link_to "Submit a Photo", new_pin_path, class: "btn btn-warning btn-large" %>
 			</p>
 		<% else %>
 			<strong> 
-				Join today and submit your photo’s to the DC Photo Grid Project. 
+				Join today and submit your photos to the DC Photo Grid Project. 
 			</strong>
 			<br>
 			<p> 
-				<%= link_to "Enter Grid", new_user_registration_path, class: "btn btn-primary btn-large" %>
+				<%= link_to "Submit to Grid", new_user_registration_path, class: "btn btn-primary btn-large" %>
 			</p>
 		<% end %>
 	</div>
 	<br>
 	<br>
 	<small>
-		This was created for 
-		<%= link_to "One Month Rails", "http://onemonthrails.com" %>
+	DC Photo Grid is a <%= link_to "Ruby on Rails","http://rubyonrails.org" %>
+		 application 
 	</small>	
 </div>
 
