@@ -1,12 +1,12 @@
 class Pin < ActiveRecord::Base
 #creates getter and setter objects
-  attr_accessible :description, :image, :image_remote_url, :get_image_loc
+  attr_accessible :description, :image, :image_remote_url
 
   validates :description, presence: true
   validates :user_id, presence: true
   validates_attachment :image, presence: true,
    content_type: { content_type: ['image/JPG','image/jpeg','image/jpg','image/png','image/gif']},
-   size: { less_than: 6.megabytes }
+   size: { less_than: 5.megabytes }
 
   belongs_to :user
   has_attached_file :image, :styles => { :small => "214x214>", :medium => "500x500>", :large => "800x800>"}
