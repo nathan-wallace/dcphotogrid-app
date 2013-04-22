@@ -31,6 +31,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'exifr' 
 gem 'paperclip'
 gem 'aws-sdk'
 gem 'activeadmin'
