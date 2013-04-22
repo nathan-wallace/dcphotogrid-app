@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Badparkin::Application.load_tasks
+DCPhotoGrid::Application.load_tasks
