@@ -88,7 +88,7 @@ DCPhotoGrid::Application.configure do
     :enable_starttls_auto => true
   }
 
-  config.action_mailer.default_url_options = { :host => 'http://dcphotogrid.com' }
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   #google analytics
   #config.gem 'rack-google-analytics', :lib => 'rack/google-analytics'
