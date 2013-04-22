@@ -7,32 +7,31 @@
 <p>
 	<b>Billy Friebele</b> lives and works in Washington, DC. He received an MFA in Studio Art from the Maryland Institute College of Art. Billy has exhibited in Baltimore, MD; New York, NY; Colorado; St. Louis, MO; Detroit, MI and Washington, DC among other places. Friebele’s work examines the intersection of new media and public space. He teaches as an Assistant Professor of Digital Media at St. Mary's College of Maryland.
 </p>
-	<div>
 		<% if user_signed_in? %>
 			<strong> 
 				Looks like you are ready to submit to the DC Photo Grid Project. 
 			</strong>
 			<br>
 			<div id="row" style="margin-top:20px;">
-			<div class="span4">
-			  		<p>
-						<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
-					</p>
+				<div class="span4">
+				  		<p>
+							<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
+						</p>
 
-					<h3>
-						Instructions:
-					</h3>
-					<ul>
-						<li>The photo must be taken within the border of Washington DC.</li>
-						<li>The photo must be taken in outdoor public space.</li>
-						<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
-						<li>You must enter the date the photo was taken.</li>
-					</ul>
+						<h3>
+							Instructions:
+						</h3>
+						<ul>
+							<li>The photo must be taken within the border of Washington DC.</li>
+							<li>The photo must be taken in outdoor public space.</li>
+							<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
+							<li>You must enter the date the photo was taken.</li>
+						</ul>
 
-				</div>
-				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
-				</div>
-			</div>	
+					</div>
+					<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid">
+					</div>
+			</div>
 		<% else %>
 			<strong> 
 				Join today and submit your photos to the DC Photo Grid Project. 
@@ -40,7 +39,7 @@
 			<br>
 			<div id="row" style="margin-top:20px;">
 
-			<div class="span4">
+				<div class="span4">
 			  		<p>
 						<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
 					</p>
@@ -56,10 +55,11 @@
 					</ul>
 
 				</div>
-				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
+				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid">
 				</div>
-			</div>	
+			</div>
 		<% end %>
+	<div>
 	</div>
 	<br>
 	<br>
