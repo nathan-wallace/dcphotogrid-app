@@ -1,6 +1,6 @@
 class Pin < ActiveRecord::Base
 #creates getter and setter objects
-  attr_accessible :description, :image, :image_remote_url, :get_image_loc
+  attr_accessible :description, :image, :image_remote_url
 
   validates :description, presence: true
   validates :user_id, presence: true
