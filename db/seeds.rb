@@ -5,11 +5,3 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-admin = User.create(
-    :name => "admin",
-    :email => "admin@dcphotogrid.com",
-    :password => "dcphotogridadmin",
-    :password_confirmation => "dcphotogridadmin"
-)
-admin.toggle!(:admin)
-# I assume "admin.update_attribute(:admin, true)" would work as well.
