@@ -13,17 +13,47 @@
 				Looks like you are ready to submit to the DC Photo Grid Project. 
 			</strong>
 			<br>
-			<p>
-				<%= link_to "Submit a Photo", new_pin_path, class: "btn btn-warning btn-large" %>
-			</p>
+			<div class="span4">
+			  		<p>
+						<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
+					</p>
+
+					<h3>
+						Instructions:
+					</h3>
+					<ul>
+						<li>The photo must be taken within the border of Washington DC.</li>
+						<li>The photo must be taken in outdoor public space.</li>
+						<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
+						<li>You must enter the date the photo was taken.</li>
+					</ul>
+
+				</div>
+				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
+				</div>
 		<% else %>
 			<strong> 
 				Join today and submit your photos to the DC Photo Grid Project. 
 			</strong>
 			<br>
-			<p> 
-				<%= link_to "Submit to Grid", new_user_registration_path, class: "btn btn-primary btn-large" %>
-			</p>
+			<div class="span4">
+			  		<p>
+						<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
+					</p>
+
+					<h3>
+						Instructions:
+					</h3>
+					<ul>
+						<li>The photo must be taken within the border of Washington DC.</li>
+						<li>The photo must be taken in outdoor public space.</li>
+						<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
+						<li>You must enter the date the photo was taken.</li>
+					</ul>
+
+				</div>
+				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
+				</div>
 		<% end %>
 	</div>
 	<br>
