@@ -12,36 +12,12 @@
 				Looks like you are ready to submit to the DC Photo Grid Project. 
 			</strong>
 			<br>
-			<div id="row" style="margin-top:20px;">
-				<div class="span4">
-				  		<p>
-							<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
-						</p>
+				
+		<div class="row" style="margin-top:20px;">
 
-						<h3>
-							Instructions:
-						</h3>
-						<ul>
-							<li>The photo must be taken within the border of Washington DC.</li>
-							<li>The photo must be taken in outdoor public space.</li>
-							<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
-							<li>You must enter the date the photo was taken.</li>
-						</ul>
-
-					</div>
-					<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid">
-					</div>
-			</div>
-		<% else %>
-			<strong> 
-				Join today and submit your photos to the DC Photo Grid Project. 
-			</strong>
-			<br>
-			<div id="row" style="margin-top:20px;">
-
-				<div class="span4">
+			  	<div class="span4">
 			  		<p>
-						<%= link_to "Submit a photo", new_pin_path, class: "btn btn-success btn-large btn-block" %>
+						<%= link_to "Submit a photo", new_pin_path, class:"btn btn-success btn-large btn-block" %>
 					</p>
 
 					<h3>
@@ -55,11 +31,35 @@
 					</ul>
 
 				</div>
-				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid">
+				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
 				</div>
-			</div>
+
+		<% else %>
+			<strong> 
+				Join today and submit your photos to the DC Photo Grid Project. 
+			</strong>
+			<br>
+			<div class="row" style="margin-top:20px;">
+
+			  	<div class="span4">
+			  		<p>
+						<%= link_to "Submit a photo", new_pin_path, class:"btn btn-success btn-large btn-block" %>
+					</p>
+
+					<h3>
+						Instructions:
+					</h3>
+					<ul>
+						<li>The photo must be taken within the border of Washington DC.</li>
+						<li>The photo must be taken in outdoor public space.</li>
+						<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
+						<li>You must enter the date the photo was taken.</li>
+					</ul>
+
+				</div>
+				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
+				</div>
 		<% end %>
-	<div>
 	</div>
 	<br>
 	<br>
@@ -67,7 +67,7 @@
 	DC Photo Grid is a <%= link_to "Ruby on Rails","http://rubyonrails.org" %>
 		 application 
 	</small>	
-</div>
+
 
 
 
