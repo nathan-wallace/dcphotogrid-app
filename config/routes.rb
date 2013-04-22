@@ -1,4 +1,4 @@
-Badparkin::Application.routes.draw do
+DCPhotoGrid::Application.routes.draw do
 
   get "users/show"
 

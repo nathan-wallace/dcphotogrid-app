@@ -9,6 +9,6 @@ en:
 
     # Default translation keys for submit FormHelper
     submit:
-      create: 'Submit Parkin'
-      update: 'Update Parkin'
+      create: 'Submit Photo
+      update: 'Update Photo
       submit: 'Save %{model}'
