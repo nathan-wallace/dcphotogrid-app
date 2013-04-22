@@ -32,6 +32,7 @@ end
 
 gem 'jquery-rails'
 gem 'paperclip'
+gem 'exifr' 
 gem 'aws-sdk'
 gem 'activeadmin'
 gem 'haml'
