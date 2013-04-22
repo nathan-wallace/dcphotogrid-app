@@ -12,6 +12,7 @@ DCPhotoGrid::Application.routes.draw do
   resources :approval
   
   get 'approved' => 'approval#approved'
+  get 'approval' => 'approval#index'
 
   # get 'approval' => 'pins#approval' do
   #   collection do
