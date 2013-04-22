@@ -91,8 +91,8 @@ DCPhotoGrid::Application.configure do
   config.action_mailer.default_url_options = { :host => 'http://dcphotogrid.com' }
 
   #google analytics
-  config.gem 'rack-google-analytics', :lib => 'rack/google-analytics'
-  config.middleware.use Rack::GoogleAnalytics, :tracker => ''
+  #config.gem 'rack-google-analytics', :lib => 'rack/google-analytics'
+  #config.middleware.use Rack::GoogleAnalytics, :tracker => ''
 
   # Peperclip should use Amazon S3 on Heroku
   # try with inline access keys to debug S3 connectivity... kill keys afterwards.
