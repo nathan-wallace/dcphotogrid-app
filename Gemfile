@@ -10,7 +10,7 @@ gem "rake", "~> 10.0.4"
 
 group :production do
   gem 'pg'
-  gem 'rack-google-analytics', :require => 'rack/google-analytics' 
+  #gem 'rack-google-analytics', :require => 'rack/google-analytics' 
 end
 
 group :development, :test do
