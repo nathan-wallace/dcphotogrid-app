@@ -1,0 +1,43 @@
+<h1>About</h1>
+<div class="hero-unit">
+	<p>
+		Bad Parkin is a collection of user submitted photos of bad parking jobs. 
+	</p>
+	<p>
+		See a parking job that makes you /facepalm? Snap a pic and upload it to Bad Parkin to share with the world. Don't let those bozo's get away with their bad parking.
+	</p>
+	<div>
+		<% if user_signed_in? %>
+			<strong> 
+				Looks like you are ready to start uploading bad parkin jobs. 
+			</strong>
+			<br>
+			<p>
+				<%= link_to "Upload!", new_pin_path, class: "btn btn-warning btn-large" %>
+			</p>
+		<% else %>
+			<strong> 
+				Join today and submit your photo’s of bad parking jobs. 
+			</strong>
+			<br>
+			<p> 
+				<%= link_to "Start Parkin", new_user_registration_path, class: "btn btn-primary btn-large" %>
+			</p>
+		<% end %>
+	</div>
+	<br>
+	<br>
+	<small>
+		This was created for 
+		<%= link_to "One Month Rails", "http://onemonthrails.com" %>
+		class by 
+		<%= link_to "Mattan Griffel", "http://mattangriffel.com" %>
+	</small>	
+</div>
+
+
+
+
+
+
+

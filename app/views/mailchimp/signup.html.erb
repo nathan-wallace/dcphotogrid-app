@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <title>Join Bad Parkin</title>
+	  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	  <meta name="description" content="Beta Access Email Forms">
+	  <meta name="keywords" content="Beta Access">
+	  <!-- Change the width below to just wider than your form's width
+	  to optimize its initial scale on Apple iOS  and Android devices -->
+	  <meta name="viewport" content="width=640">
+	  <%= stylesheet_link_tag "mailchimp", :media => "all" %>
+	  <% render 'mailchimp-js' %>       
+	</head>
+	<body>
+		<img src="/assets/badparkin-icon.png", width="100px">
+		<h3> Bad Parkin is currently in development for a 
+			<a href="http://onemonthrails.com", target="_blank">One Month Rails</a>
+			project.
+			<br> 
+			Sign up below to get early access.</h3>
+		<div class="wrapper rounded6" id="templateContainer">
+	    <div id="templateBody" class="bodyContent rounded6">
+				<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+					<form action="http://badpark.us5.list-manage.com/subscribe/post" method="POST">
+					<input type="hidden" name="u" value="4d30b76b6d6adff791f213543">
+					<input type="hidden" name="id" value="096ac65939">
+					<div id="mergeTable" class="mergeTable">
+					<div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
+					<label for="MERGE0"><strong>Email Address</strong> <span class="asterisk">*</span></label>
+					<div class="field-group">
+					    <input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">  
+					</div>
+			</div>
+			<div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-1">
+				<label for="MERGE1"><strong>First Name</strong> <span class="asterisk">*</span></label>
+				<div class="field-group">
+    			<input type="text" name="MERGE1" id="MERGE1" size="25" value="">
+    		</div>
+			</div>
+			<div class="mergeRow dojoDndItem mergeRow-text" id="mergeRow-2">
+				<label for="MERGE2"><strong>Last Name</strong> <span class="asterisk">*</span></label>
+				<div class="field-group">
+				    <input type="text" name="MERGE2" id="MERGE2" size="25" value="">
+   			</div>
+			</div>
+			<div class="mergeRow dojoDndItem mergeRow-zip" id="mergeRow-3">
+				<label for="MERGE3">Zip Code</label>
+				<div class="field-group">
+				    <input type="text" name="MERGE3" id="MERGE3" size="25" value="">   
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="submit_container">
+			<input type="submit" class="button" name="submit" value="Subscribe to list">
+		</div>
+		</form>
+		</div>
+		</div>
+		<div class="poweredWrapper">
+			<span class="poweredBy"><a href="http://www.mailchimp.com/monkey-rewards/?utm_source=freemium_newsletter&utm_medium=email&utm_campaign=monkey_rewards&aid=4d30b76b6d6adff791f213543&afl=1"><img src="http://cdn-images.mailchimp.com/monkey_rewards/MC_MonkeyReward_15.png" border="0" alt="Email Marketing Powered by MailChimp" title="MailChimp Email Marketing" width="139" height="54"></a></span>
+		</div>		
+	</body>
+</html>
+	<% render 'mailchimp-ga' %>
+            
