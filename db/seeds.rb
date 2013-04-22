@@ -11,5 +11,5 @@ admin = User.create(
     :password => "dcphotogridadmin",
     :password_confirmation => "dcphotogridadmin"
 )
-admin.update_attribute(:admin, true)
-# I assume "admin.toggle!(:admin)" would work as well.
+admin.toggle!(:admin)
+# I assume "admin.update_attribute(:admin, true)" would work as well.
