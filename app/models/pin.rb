@@ -17,6 +17,7 @@ class Pin < ActiveRecord::Base
     self.image = URI.parse(url_value) unless url_value.blank?
     super
   end
+
 # Image geolocation
   def get_image_loc
     imgfile = EXIFR::JPEG.new(image.queued_for_write[:original].path)
@@ -31,4 +32,5 @@ class Pin < ActiveRecord::Base
     self.img_loc_lat  = lat # imgfile.gps_latitude
     self.img_loc_lng  = lng # imgfile.gps_longitude
   end
+ end
  end 
