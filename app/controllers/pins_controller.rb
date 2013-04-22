@@ -47,7 +47,7 @@ class PinsController < ApplicationController
 
     respond_to do |format|
       if @pin.save
-        format.html { redirect_to @pin, notice: 'Parkin job was successfully submitted.' }
+        format.html { redirect_to @pin, notice: 'Your Photo was successfully submitted.' }
         format.json { render json: @pin, status: :created, location: @pin }
       else
         format.html { render action: "new" }
@@ -63,7 +63,7 @@ class PinsController < ApplicationController
 
     respond_to do |format|
       if @pin.update_attributes(params[:pin])
-        format.html { redirect_to @pin, notice: 'Your parkin job has been sent for approval. Check back soon to see it in the stream.' }
+        format.html { redirect_to @pin, notice: 'Your photo has been sent for approval. Check back soon to see it in the grid.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
