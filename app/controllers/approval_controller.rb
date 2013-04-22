@@ -8,9 +8,10 @@ class ApprovalController < ApplicationController
     @pins = Pin.where(approved: true).order("created_at desc")
   end
 
-  def index
+     def index
+    @pins = Pin.where(approved: false).order("created_at desc")
     @pins = Pin.where(approved: [false, nil]).order("created_at desc")
-  end
+   end 
 
   def edit
     @pin = Pin.find(params[:id])
