@@ -5,9 +5,26 @@
 				<h3>
 				Artist-Citizen, Washington DC at HEMPHILL in June 2013
 				</h3>
-		<p> 
-			<%= link_to "Enter Grid", new_user_registration_path, class: "btn btn-primary btn-large" %>
-		</p>
+		<div class="row" style="margin-top:20px;">
+
+			  	<div class="span4">
+			  		<p>
+						<%= link_to "Submit a photo", new_pin_path, class:"btn btn-success btn-large btn-block" %>
+					</p>
+
+					<h3>
+						Instructions:
+					</h3>
+					<ul>
+						<li>The photo must be taken within the border of Washington DC.</li>
+						<li>The photo must be taken in outdoor public space.</li>
+						<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
+						<li>You must enter the date the photo was taken.</li>
+					</ul>
+
+				</div>
+				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
+				</div>
 	</div>
 <% end %>
 
