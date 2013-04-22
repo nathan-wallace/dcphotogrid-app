@@ -1,9 +1,9 @@
-class RemoveMarkingEmailsFromUsers < ActiveRecord::Migration
+class RemoveMarketingEmailsFromUsers < ActiveRecord::Migration
   def up
-    remove_column :users, :marking_emails
+    remove_column :users, :marketing_emails
   end
 
   def down
-    add_column :users, :marking_emails, :boolean
+    add_column :users, :marketing_emails, :boolean
   end
 end
