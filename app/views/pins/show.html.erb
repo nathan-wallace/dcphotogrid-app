@@ -1,7 +1,32 @@
 <div class="row">
 	<div class="span6 offset3">
 		<div class="well">
-			<%= image_tag @pin.image.url(:large) %>
+			<div class="pin-nav">
+				<% # Custom pin-nav class
+					 # Right now it only scrolls through ALL images 
+					 # This isn't good if you start navigating from a user's page,
+					 # but that will probably be rather complex 
+					 # Also, this is scrolling by ID which is not good. 
+					 # It should be at least by timestamp (created_at?).
+				%>
+				<div class="pin_nav_left">
+					<% if @pin.id == Pin.maximum("id") %>
+						<%= content_tag(:i, "", class:"icon-chevron-left icon-white icon-2x") %>
+					<% else %>
+						<%= link_to content_tag(:i, "", class:"icon-chevron-left icon-2x"), Pin.find(Pin.where("id > ?", @pin.id).minimum("id")) %>
+					<% end %>
+				</div>
+				<div class="pin_nav_right">
+					<% if @pin.id == Pin.minimum("id") %>
+						<%= content_tag(:i, "", class:"icon-chevron-right icon-white icon-2x") %>
+					<% else %>
+						<%= link_to content_tag(:i, "", class:"icon-chevron-right icon-2x"), Pin.find(Pin.where("id < ?", @pin.id).maximum("id")) %>
+					<% end %>
+				</div>
+			</div>
+			<div align="center">
+				<%= image_tag @pin.image %>
+			</div>
 			<p>
 			  <%= @pin.description %>
 			</p>
@@ -9,19 +34,19 @@
 			  <%= @pin.user.name %>
 			</p>
 			<% if current_user == @pin.user %>
-				<%= link_to 'Edit', edit_pin_path(@pin) %> |
-				<%= link_to 'Back', pins_path %>
-			<% end %> 	
+				<%= link_to content_tag(:i, "", class:"icon-edit icon-2x"), edit_pin_path(@pin) %> |
+				<%= link_to content_tag(:i, "", class:"icon-trash icon-2x"), @pin, method: :delete, data: { confirm: 'Are you sure?' } %> |
+			<% end %> 
+			<%= link_to content_tag(:i, "", class:"icon-home icon-2x"), pins_path %>
 			<% unless @pin.img_loc_lat.blank? 
-        	#bespoke code to load a map if the location information is available 
-      		%>
-        	<p>&nbsp;<br />
-          <img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @pin.img_loc_lat %>,<%= @pin.img_loc_lng %>&zoom=13&size=600x300&maptype=roadmap&markers=color:green%7Clabel:P%7C<%= @pin.img_loc_lat %>,<%= @pin.img_loc_lng %>&sensor=false">
-        	</p>
-      		<% end %> 
+				# bespoke code to load a map if the location information is available 
+				# Google Static Maps for now
+				# Look to upgrade to Google Maps API 3 - there seem to be a few gems available for it
+			%>
+				<p>&nbsp;<br />
+					<img src="http://maps.googleapis.com/maps/api/staticmap?center=<%= @pin.img_loc_lat %>,<%= @pin.img_loc_lng %>&zoom=13&size=600x300&maptype=roadmap&markers=color:green%7Clabel:P%7C<%= @pin.img_loc_lat %>,<%= @pin.img_loc_lng %>&sensor=false">
+				</p>
+			<% end %>
 		</div>
 	</div>
 </div>
-
-
-
