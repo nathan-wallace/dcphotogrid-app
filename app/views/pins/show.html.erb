@@ -28,10 +28,10 @@
 				<%= image_tag @pin.image %>
 			</div>
 			<p>
-			  <%= @pin.description %>
+			  <b>Location:</b> <%= @pin.description %>
 			</p>
 			<p>
-			  <%= @pin.user.name %>
+			  <b>Posted by:</b> <%= @pin.user.name %>
 			</p>
 			<% if current_user == @pin.user %>
 				<%= link_to content_tag(:i, "", class:"icon-edit icon-2x"), edit_pin_path(@pin) %> |

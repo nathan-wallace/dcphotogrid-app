@@ -2,20 +2,16 @@
   <%= f.error_notification %>
   <%= f.full_error :image_file_size, class: "alert alert-error" %>
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
-
   <p>
   	<%= image_tag @pin.image %>
   </p>
   <p>
-  	<%= @pin.description %>
+  	<b>Location:</b> <%= @pin.description %>
   </p>
-  <p>
-  	By checking you will be adding this photo to the Grid. 
-  	<%= f.check_box :approved, {}, 'true', 'false' %>
+ <p>
+    By checking you will be adding this photo to the Grid. 
+    <%= f.check_box :approved, {}, 'true', 'false' %>
   </p>
-
- 
-
   <div class="form-actions">
     <%= f.button :submit, class: "btn btn-primary" %>
   </div>
