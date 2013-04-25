@@ -20,7 +20,6 @@
 				</ul>
 				<ul class="nav pull-right">
           <% if @admin %>
-            <li><%= link_to "Remove Approved", approved_index_path %></li>
             <li><%= link_to "Moderate", approval_index_path %></li>
           <% end %>
           <% if user_signed_in? %>
