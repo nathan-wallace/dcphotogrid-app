@@ -5,7 +5,14 @@ $navbarCollapseWidth: 800px;
 
 body {
 	padding-top: 100px;
+	background-image: url(/assets/images/bg-bw.jpg);
+	background-position: 50% 50%;
+	background-size: cover;
+	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,0.2),inset 0 -3px 7px rgba(0,0,0,0.2);
+	box-shadow: inset 0 3px 7px rgba(0,0,0,0.2),inset 0 -3px 7px rgba(0,0,0,0.2);
+	min-height: 300px;
 }
+
 
 a{
 	color:#659a00;
