@@ -5,15 +5,17 @@ $navbarCollapseWidth: 800px;
 
 body {
 	padding-top: 100px;
+	
+}
+
+.container{
 	background-image: url(/assets/images/bg.jpg) no-repeat center center fixed; 
   	-webkit-background-size: cover;
   	-moz-background-size: cover;
  	-o-background-size: cover;
  	background-size: cover;
 	background-position: 50% 50%;
-	-webkit-box-shadow: inset 0 3px 7px rgba(0,0,0,0.2),inset 0 -3px 7px rgba(0,0,0,0.2);
-	box-shadow: inset 0 3px 7px rgba(0,0,0,0.2),inset 0 -3px 7px rgba(0,0,0,0.2);
-	min-height: 300px;
+
 }
 
 
