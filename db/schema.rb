@@ -56,14 +56,14 @@ ActiveRecord::Schema.define(:version => 20130408035459) do
 
   create_table "pins", :force => true do |t|
     t.string   "description"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
     t.integer  "user_id"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
-    t.boolean  "approved"
+    t.boolean  "approved",           :default => false
     t.string   "image_remote_url"
     t.decimal  "img_loc_lat"
     t.decimal  "img_loc_lng"
@@ -86,9 +86,7 @@ ActiveRecord::Schema.define(:version => 20130408035459) do
     t.datetime "updated_at",                                :null => false
     t.string   "name"
     t.boolean  "admin",                  :default => false
-    t.string   "permalink"
     t.string   "slug"
-    t.boolean  "marketing_emails",       :default => false
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
