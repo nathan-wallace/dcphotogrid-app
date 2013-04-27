@@ -30,9 +30,9 @@ class Pin < ActiveRecord::Base
 
     self.img_loc_lat  = lat # imgfile.gps_latitude
     self.img_loc_lng  = lng # imgfile.gps_longitude
+    
+    imgfile.blank unless self.img_loc_lat.nil?
   end
-	def get_image_loc
-		if img_loc_lat.blank? then imgfile = imgfile.blank? end
-   end
+	
 end
 
