@@ -48,11 +48,20 @@ form {
 
 .footer{
 	margin-top: 50px;
-	padding:1% 50%;
 	background: #f8f8f8;
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
 	}
+.footer ul{
+	list-style: none;
+}
+
+/* Social Media Icons
+----------------------------------------------- */
+a.socialIcons:hover {
+	opacity: .8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
 
 	a{
 		color: $gray;

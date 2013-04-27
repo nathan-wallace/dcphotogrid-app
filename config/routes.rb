@@ -25,6 +25,7 @@ DCPhotoGrid::Application.routes.draw do
   match 'users/:id' => 'users#show', as: :user
 
   get 'about' => 'pages#about'
+  get 'video' => 'pages#video'
   get 'home' => 'pages#home'
   
 
