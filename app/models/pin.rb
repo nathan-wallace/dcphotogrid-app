@@ -20,7 +20,7 @@ class Pin < ActiveRecord::Base
   # Image geolocation
   def get_image_loc
     imgfile = EXIFR::JPEG.new(image.queued_for_write[:original].path)
-	return unless imgfile && !imgfile.exif.empty?  
+	return unless imgfile && imgfile.exif && !imgfile.exif.nil?  
 
     lat = imgfile.exif[0].gps_latitude[0].to_f + (imgfile.exif[0].gps_latitude[1].to_f / 60) + (imgfile.exif[0].gps_latitude[2].to_f / 3600)
     lng = imgfile.exif[0].gps_longitude[0].to_f + (imgfile.exif[0].gps_longitude[1].to_f / 60) + (imgfile.exif[0].gps_longitude[2].to_f / 3600)
