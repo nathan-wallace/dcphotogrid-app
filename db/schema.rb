@@ -65,8 +65,8 @@ ActiveRecord::Schema.define(:version => 20130408035459) do
     t.datetime "image_updated_at"
     t.boolean  "approved",           :default => false
     t.string   "image_remote_url"
-    t.decimal  "img_loc_lat"    :default => 0
-    t.decimal  "img_loc_lng"    :default => 0
+    t.decimal  "img_loc_lat"    
+    t.decimal  "img_loc_lng"    
   end
 
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
