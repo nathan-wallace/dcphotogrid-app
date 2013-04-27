@@ -32,7 +32,7 @@ class Pin < ActiveRecord::Base
     self.img_loc_lng  = lng # imgfile.gps_longitude
   end
 	def get_image_loc
-		if :get_image_loc.nil? then imgfile = imgfile.blank?
+		if :get_image_loc.nil? then imgfile = imgfile.blank? end
 		 super # existing functionality is inherited
    end
 end
