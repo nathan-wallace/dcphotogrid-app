@@ -30,7 +30,6 @@ class Pin < ActiveRecord::Base
 
     self.img_loc_lat  = lat # imgfile.gps_latitude
     self.img_loc_lng  = lng # imgfile.gps_longitude
-    
   end
 	
 end
