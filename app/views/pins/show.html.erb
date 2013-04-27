@@ -38,7 +38,7 @@
 				<%= link_to content_tag(:i, "", class:"icon-trash icon-2x"), @pin, method: :delete, data: { confirm: 'Are you sure?' } %> |
 			<% end %> 
 			<%= link_to content_tag(:i, "", class:"icon-home icon-2x"), pins_path %>
-			<% unless @pin.img_loc_lat.blank? or @pin.img_loc_lat.nil?
+			<% unless @pin.img_loc_lat.blank?
 				# bespoke code to load a map if the location information is available 
 				# Google Static Maps for now
 				# Look to upgrade to Google Maps API 3 - there seem to be a few gems available for it
