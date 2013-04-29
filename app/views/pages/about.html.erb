@@ -1,11 +1,8 @@
 <div class="hero-unit">
-<h1>About</h1>
-<p>
-	<b>Michael Dax Iacovone</b> is an artist and a teacher.  He holds a BS in Photography and Art Education from the State University of NY, and an MFA from Maryland Institute College of Art. He has exhibited his work in Baltimore, MD; Brooklyn, NY; Philadelphia, PA; Sarajevo, Bosnia, St.Louis, MO; and Washington, DC.  Mike has lived in Washington DC since 1999 but misses his voting rights.  He has walked through every square mile of the city, and regardless of where you ask him about, he will always reply "It's really not that far."
-</p>
-<p>
-	<b>Billy Friebele</b> lives and works in Washington, DC. He received an MFA in Studio Art from the Maryland Institute College of Art. Billy has exhibited in Baltimore, MD; New York, NY; Colorado; St. Louis, MO; Detroit, MI and Washington, DC among other places. Friebele’s work examines the intersection of new media and public space. He teaches as an Assistant Professor of Digital Media at St. Mary's College of Maryland.
-</p>
+	<h1>About the Project</h1>
+	<p>
+  		The space of Washington DC is made up of government buildings, businesses, and domestic dwellings. What's left over is the public space of parks, streets, and sidewalks. This is a crowd sourced public archive of that free space. 
+  	</p>
 		<% if user_signed_in? %>
 			<strong> 
 				Looks like you are ready to submit to the DC Photo Grid Project. 
@@ -61,7 +58,24 @@
 		<% end %>
 	</div>
 	<br>
-	<br>
+	<div class="hero-unit">
+<h1>About the Artists</h1>
+<div class="row">
+	<div class="span5">
+<p>
+	<%= image_tag("Mike.png", :class => 'img-circle', :alt => "Mike") %>
+	<b>Michael Dax Iacovone</b> is an artist and a teacher.  He holds a BS in Photography and Art Education from the State University of NY, and an MFA from Maryland Institute College of Art. He has exhibited his work in Baltimore, MD; Brooklyn, NY; Philadelphia, PA; Sarajevo, Bosnia, St.Louis, MO; and Washington, DC.  Mike has lived in Washington DC since 1999 but misses his voting rights.  He has walked through every square mile of the city, and regardless of where you ask him about, he will always reply "It's really not that far."
+</p>
+	</div>
+	<div class="span5">
+	<p>
+		<%= image_tag("Billy.png", :class => 'img-circle', :alt => "Billy") %>
+		<b>Billy Friebele</b> lives and works in Washington, DC. He received an MFA in Studio Art from the Maryland Institute College of Art. Billy has exhibited in Baltimore, MD; New York, NY; Colorado; St. Louis, MO; Detroit, MI and Washington, DC among other places. Friebele’s work examines the intersection of new media and public space. He teaches as an Assistant Professor of Digital Media at St. Mary's College of Maryland.
+	</p>		
+	</div>
+
+</div>
+</div>
 <div class="hero-unit">
 	<small>
 	DC Photo Grid is a <%= link_to "Ruby on Rails","http://rubyonrails.org" %> application created by Nathan Wallace in collaboration with Free Space Collective.
