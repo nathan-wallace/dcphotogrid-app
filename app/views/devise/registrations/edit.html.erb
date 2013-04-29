@@ -7,11 +7,7 @@
   <%= f.input :password, label: "New Password", :autocomplete => "off" %>
   <%= f.input :password_confirmation, label: "New Password Confirmation", :autocomplete => "off" %>
   <%= f.input :current_password %>
-  <p>
-    Want to receive emails from time to time? Promise not to spam.
-    <span><%= f.check_box :marketing_emails, {}, 'true', 'false' %></span>
-  </p>
-
+ 
   <div class="form-actions">
     <%= f.submit "Update", class: "btn btn-primary" %>
   </div>
