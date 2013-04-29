@@ -1,4 +1,13 @@
-$btnPrimaryBackground: green;
+
+/* 
+$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);
+*/ 
+
+$btnPrimaryBackground: black;
+$navbarBackground: white;
+$navbarBackgroundHighLight: white;
+
 $navbarCollapseWidth: 800px;
 
 @import 'bootstrap';
@@ -29,7 +38,6 @@ form {
 	    padding:20px;
 
 }
-
 
 .navbar .brand {
     color: #777777;
@@ -66,6 +74,26 @@ a.socialIcons:hover {
 	a{
 		color: $gray;
 	}
+
+.btn-primary {
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, gray, #000000);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: white;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.nav .dropdown-toggle .caret {
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
+
+.nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
+    border-bottom-color: #FFFFFF;
+    border-top-color: #FFFFFF;
+}
+
 
 
 .nav li {
