@@ -15,8 +15,8 @@ class PinsController < ApplicationController
 
   # GET /pins/1
   # GET /pins/1.json
-  def show
-   @pins = Pin.where(params[:id])
+ def show
+    @pin = Pin.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
