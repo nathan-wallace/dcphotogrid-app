@@ -16,7 +16,7 @@ class PinsController < ApplicationController
   # GET /pins/1
   # GET /pins/1.json
   def show
-    @pins = Pin.find(params[:id], approved: false).order("created_at desc")
+    @pins = Pin.find(params[:id], approved: true).order("created_at desc")
 
 
     respond_to do |format|
