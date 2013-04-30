@@ -9,7 +9,7 @@
 					 # Also, this is scrolling by ID which is not good. 
 					 # It should be at least by timestamp (created_at?).
 				%>
-				<div class="pin_nav_left">
+					<div class="pin_nav_left">
 					<% if @pin.id == Pin.maximum("id") %>
 						<%= content_tag(:i, "", class:"icon-chevron-left icon-white icon-2x") %>
 					<% else %>
