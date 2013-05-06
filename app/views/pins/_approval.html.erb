@@ -8,6 +8,7 @@
 			Posted by <%= pin.user.name %> 
 		</strong>
 	</p>
+	
 	<p>
 		  <%= link_to content_tag(:i, "", class:"icon-edit"), edit_pin_path(pin) %> |
 		  <%= link_to content_tag(:i, "", class:"icon-trash"), pin, method: :delete, data: { confirm: 'Are you sure?' } %>

@@ -1,17 +1,25 @@
+<h1>About</h1>
 <div class="hero-unit">
-	<h1>About the Project</h1>
 	<p>
-  		The space of Washington DC is made up of government buildings, businesses, and domestic dwellings. What's left over is the public space of parks, streets, and sidewalks. This is a crowd sourced public archive of that free space. 
-  	</p>
+
+	<b>Michael Dax Iacovone</b> is an artist and a teacher.  He holds a BS in Photography and Art Education from the State University of NY, and an MFA from Maryland Institute College of Art. He has exhibited his work in Baltimore, MD; Brooklyn, NY; Philadelphia, PA; Sarajevo, Bosnia, St.Louis, MO; and Washington, DC.  Mike has lived in Washington DC since 1999 but misses his voting rights.  He has walked through every square mile of the city, and regardless of where you ask him about, he will always reply "It's really not that far."
+</p>
+<p>
+	<b>Billy Friebele</b> lives and works in Washington, DC. He received an MFA in Studio Art from the Maryland Institute College of Art. Billy has exhibited in Baltimore, MD; New York, NY; Colorado; St. Louis, MO; Detroit, MI and Washington, DC among other places. Friebele’s work examines the intersection of new media and public space. He teaches as an Assistant Professor of Digital Media at St. Mary's College of Maryland.
+</p>
+
+<p>
+	The space of Washington DC is made up of government buildings, businesses, and domestic dwellings.  What's left over is the public space of parks, streets, and sidewalks.  This is a crowd sourced public archive of that free space. 
+</p>
 		<% if user_signed_in? %>
 			<strong> 
 				Looks like you are ready to submit to the DC Photo Grid Project. 
 			</strong>
 			<br>
 				
-		<div class="row-fluid" style="margin-top:20px;">
+		<div class="row" style="margin-top:20px;">
 
-			  	<div class="span6">
+			  	<div class="span4">
 			  		<p>
 						<%= link_to "Submit a photo", new_pin_path, class:"btn btn-success btn-large btn-block" %>
 					</p>
@@ -22,11 +30,12 @@
 					<ul>
 						<li>The photo must be taken within the border of Washington DC.</li>
 						<li>The photo must be taken in outdoor public space.</li>
-						<li>Note the nearest intersection.</li>
+						<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
+						<li>You must enter the date the photo was taken.</li>
 					</ul>
 
 				</div>
-				<div class="span6 pull-right"><%= image_tag("dcphotogrid.png", :alt => "dc photo grid", :class => 'pull-right') %></div>
+				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
 				</div>
 
 		<% else %>
@@ -34,9 +43,9 @@
 				Join today and submit your photos to the DC Photo Grid Project. 
 			</strong>
 			<br>
-			<div class="row-fluid" style="margin-top:20px;">
+			<div class="row" style="margin-top:20px;">
 
-			  	<div class="span6">
+			  	<div class="span4">
 			  		<p>
 						<%= link_to "Submit a photo", new_pin_path, class:"btn btn-success btn-large btn-block" %>
 					</p>
@@ -47,46 +56,22 @@
 					<ul>
 						<li>The photo must be taken within the border of Washington DC.</li>
 						<li>The photo must be taken in outdoor public space.</li>
-						<li>Note the nearest intersection.</li>
-<<<<<<< HEAD
-
-=======
->>>>>>> 115c98b01039dc09b31a1a23f906ab992b2fcacb
+						<li>You must locate the square mile the photo was taken in and indicate the mile along with the submission.</li>
+						<li>You must enter the date the photo was taken.</li>
 					</ul>
 
 				</div>
-				<div class="span6 pull-right"><%= image_tag("dcphotogrid.png", :alt => "dc photo grid", :class => 'pull-right') %></div>
+				<div class="span5 pull-right"><img class="logo-home-page" src="http://invisibledrawings.com/dcphotogrid.png" alt="DC Photo Grid"></div>
 				</div>
 		<% end %>
 	</div>
 	<br>
-	<div class="hero-unit">
-<h1>About the Artists</h1>
-<br>
-<div class="row-fluid">
-	<div class="span6">
-		<%= image_tag("mike.png", :class => 'img-circle', :alt => "Mike") %>
-
-<p>
-	<b>Michael Dax Iacovone</b> is an artist and a teacher.  He holds a BS in Photography and Art Education from the State University of NY, and an MFA from Maryland Institute College of Art. He has exhibited his work in Baltimore, MD; Brooklyn, NY; Philadelphia, PA; Sarajevo, Bosnia, St.Louis, MO; and Washington, DC.  Mike has lived in Washington DC since 1999 but misses his voting rights.  He has walked through every square mile of the city, and regardless of where you ask him about, he will always reply "It's really not that far."
-</p>
-	</div>
-	<div class="span6">
-		<%= image_tag("billy.png", :class => 'img-circle', :alt => "Billy") %>
-
-	<p>
-		<b>Billy Friebele</b> lives and works in Washington, DC. He received an MFA in Studio Art from the Maryland Institute College of Art. Billy has exhibited in Baltimore, MD; New York, NY; Colorado; St. Louis, MO; Detroit, MI and Washington, DC among other places. Friebele’s work examines the intersection of new media and public space. He teaches as an Assistant Professor of Digital Media at St. Mary's College of Maryland.
-	</p>		
-	</div>
-
-</div>
-</div>
-<div class="hero-unit">
+	<br>
 	<small>
-	DC Photo Grid is a <%= link_to "Ruby on Rails","http://rubyonrails.org" %> application created by Nathan Wallace in collaboration with Free Space Collective.
+	DC Photo Grid is a <%= link_to "Ruby on Rails","http://rubyonrails.org" %>
+		 application 
 	</small>	
-	
-</div>
+
 
 
 

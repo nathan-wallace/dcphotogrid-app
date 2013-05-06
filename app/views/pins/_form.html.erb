@@ -1,11 +1,13 @@
-<%= simple_form_for(@pin, :html => { class: "form-horizontal", :multipart => true }) do |f| %>
+<%= simple_form_for(@pin, html: { class: "form-horizontal"}) do |f| %>
   <%= f.error_notification %>
   <%= f.full_error :image_file_size, class: "alert alert-error" %>
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
 
   <%= f.input :image, label: "Upload to Grid"  %>
-  <%= f.input :image_remote_url, label: "or upload from URL" %>
+  <% f.input :image_remote_url, label: "or upload from URL" %>
   <%= f.input :description, label: "Location:", as: :text, input_html: { rows: "3", :maxlength => "40"} %>
+
+ 
 
   <div class="form-actions">
   	<%= f.submit class: "btn btn-primary" %>

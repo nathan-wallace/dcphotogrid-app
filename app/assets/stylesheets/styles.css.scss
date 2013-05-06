@@ -1,13 +1,4 @@
-
-/* 
-$baseFontFamily: Oxygen;
-@import url(http://fonts.googleapis.com/css?family=Oxygen);
-*/ 
-
-$btnPrimaryBackground: black;
-$navbarBackground: white;
-$navbarBackgroundHighLight: white;
-
+$btnPrimaryBackground: green;
 $navbarCollapseWidth: 800px;
 
 @import 'bootstrap';
@@ -26,19 +17,6 @@ a:hover{
 
 @import 'bootstrap-responsive';
 
-.container h2 {color:#659a00;}
-
-form {
-    background: #f8f8f8;
-    padding:20px;
-}
-
-.under-form{
-	background: #f8f8f8;
-	padding:10px;
-
-}
-
 .navbar .brand {
     color: #777777;
     display: block;
@@ -46,7 +24,7 @@ form {
     font-size: 20px;
     font-weight: 200;
     margin-left: -20px;
-    padding: 15px;
+    padding: 20px;
     text-shadow: 0 1px 0 #FFFFFF;
 }
 
@@ -54,57 +32,27 @@ form {
 	padding: 40px;
 }
 
-.footer{
-	margin-top: 50px;
+.footer{ 
+	margin-top: 50px;  
+	padding: 1% 10%;
 	background: #f8f8f8;
 	border-bottom: 1px solid #ddd;
 	border-top: 1px solid #ddd;
-	}
-.footer ul{
-	list-style: none;
-}
-
-/* Social Media Icons
------------------------------------------------ */
-a.socialIcons:hover {
-	opacity: .8;
-	filter:alpha(opacity=80); /* For IE8 and earlier */
 }
 
 	a{
 		color: $gray;
 	}
 
-.btn-primary {
-    background-color: #000000;
-    background-image: linear-gradient(to bottom, gray, #000000);
-    background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    color: white;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-}
-
-.nav .dropdown-toggle .caret {
-    border-bottom-color: #FFFFFF;
-    border-top-color: #FFFFFF;
-}
-
-.nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
-    border-bottom-color: #FFFFFF;
-    border-top-color: #FFFFFF;
-}
-
-
 
 .nav li {
 	font-size: 16px;
-	line-height: 35px;
+	line-height: 45px;
 }
 
 /* Masonry Stylings */
 
 .box {
-	background: #f8f8f8;
 	margin: 5px;
 	padding: 5px;
 	font-size: 11px;
