@@ -13,3 +13,10 @@
  *= stub mailchimp
  *= stub active_admin
  */
+body{
+background-image: url(/assets/bg-color.jpg);
+background-position: 50% 50%;
+background-size: cover;
+}
+
+

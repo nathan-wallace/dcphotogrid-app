@@ -67,7 +67,6 @@ ActiveRecord::Schema.define(:version => 20130408035459) do
     t.string   "image_remote_url"
     t.decimal  "img_loc_lat"
     t.decimal  "img_loc_lng"
-  end
 
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
 
