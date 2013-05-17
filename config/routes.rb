@@ -20,7 +20,8 @@ DCPhotoGrid::Application.routes.draw do
   #   end
   # end
 
-  
+  get 'users/show/:id' => 'users#show'
+
   devise_for :users
   match 'users/:id' => 'users#show', as: :user
 
