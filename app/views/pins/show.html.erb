@@ -31,7 +31,7 @@
 			  <b>Location:</b> <%= @pin.description %>
 			</p>
 			<p>
-			  <b>Posted by:</b> <%= link_to pin.user.name, pin.user %>
+			  <b>Posted by:</b> <%= link_to @pin.user.name %>
 			</p>
 			<% if current_user == @pin.user %>
 				<%= link_to content_tag(:i, "", class:"icon-edit icon-2x"), edit_pin_path(@pin) %> |
