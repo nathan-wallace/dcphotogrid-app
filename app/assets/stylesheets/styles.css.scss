@@ -10,6 +10,14 @@ $navbarBackgroundHighLight: white;
 
 $navbarCollapseWidth: 800px;
 
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #000000, #333333);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
 @import 'bootstrap';
 
 body {
