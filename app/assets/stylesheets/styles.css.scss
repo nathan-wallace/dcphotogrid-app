@@ -20,8 +20,9 @@ a{
 	color:#659a00;
 }
 
-a:hover{
-	color:#659a00;
+a:hover, a:focus {
+    color:#659a00;
+    text-decoration: underline;
 }
 
 @import 'bootstrap-responsive';
