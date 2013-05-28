@@ -17,7 +17,7 @@
 		  <%= link_to content_tag(:i, "", class:"icon-trash"), pin, method: :delete, data: { confirm: 'Are you sure?' } %>
 	<% end %> 
 	<% if @admin %>
-	<%=link_to content_tag(:i, "", class:"icon-print"), pin.image.url(:original) %>
+	| <%=link_to content_tag(:i, "", class:"icon-print"), pin.image.url(:original) %>
 	<% end %> 
 	</p>
 </div>
