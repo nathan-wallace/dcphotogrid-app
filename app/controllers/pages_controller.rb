@@ -5,11 +5,13 @@ class PagesController < ApplicationController
   	respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @pins }
-      format.js #home js for endless scroll
+     # format.js #home js for endless scroll
     end
   end
 
   def about
   end
 
+  def video
+   end
 end

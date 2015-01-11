@@ -3,7 +3,7 @@
   <%= f.full_error :image_file_size, class: "alert alert-error" %>
   <%= f.full_error :image_content_type, class: "alert alert-error" %>
   <p>
-  	<%= image_tag @pin.image %>
+  	<%= image_tag @pin.image(:large) %>
   </p>
   <p>
   	<b>Location:</b> <%= @pin.description %>

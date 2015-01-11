@@ -10,7 +10,8 @@ class User < ActiveRecord::Base
   friendly_id :name, use: :slugged
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :admin, :permalink, :slug, :marketing_emails
+  attr_accessible :email, :password, :password_confirmation, :remember_me, :name, :admin, :permalink, :slug
+  #, :marketing_emails
   # attr_accessible :title, :body
 
   has_many :pins

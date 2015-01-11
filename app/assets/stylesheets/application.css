@@ -13,3 +13,16 @@
  *= stub mailchimp
  *= stub active_admin
  */
+body{
+background-image: url(/assets/bg-color.jpg);
+background-position: 50% 50%;
+background-size: cover;
+}
+
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
+    background-color: #000000;
+    background-image: linear-gradient(to bottom, #000000, #333333);
+    background-repeat: repeat-x;
+    color: #FFFFFF;
+    text-decoration: none;
+}

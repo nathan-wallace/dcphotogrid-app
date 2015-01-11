@@ -15,7 +15,7 @@ class PinsController < ApplicationController
 
   # GET /pins/1
   # GET /pins/1.json
-  def show
+ def show
     @pin = Pin.find(params[:id])
 
     respond_to do |format|
@@ -47,7 +47,7 @@ class PinsController < ApplicationController
 
     respond_to do |format|
       if @pin.save
-        format.html { redirect_to @pin, notice: 'Your Photo was successfully submitted.' }
+        format.html { redirect_to @pin, notice: 'Its Done, Your Photo was successfully submitted. Please wait while we moderate your image' }
         format.json { render json: @pin, status: :created, location: @pin }
       else
         format.html { render action: "new" }
