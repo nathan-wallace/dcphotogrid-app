@@ -32,7 +32,11 @@
 				</div>
 	</div>
 <% end %>
+ <% @instagram.each do |instagram| %>
 
+    <%= image_tag instagram.images.standard_resolution.url %>
+
+    <% end %>
 <div id="pins">
   <%= render @pins %>
 </div>
