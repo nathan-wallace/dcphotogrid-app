@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   def home
-  @instagram = Instagram.user_recent_media("natesindc", {:count => 20})
   	@pins = Pin.where(approved: true).order("updated_at desc").page(params[:page]).per_page(20)
   	@admin = user_signed_in?&&current_user.admin?
   	respond_to do |format|
