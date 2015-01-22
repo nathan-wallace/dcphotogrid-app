@@ -1,0 +1,14 @@
+<div class="hero-unit">
+	<h2 style="color:#333;">Instagram</h2>	
+</div>
+ <% @instagram.each do |instagram| %>
+
+    <%= image_tag instagram.images.standard_resolution.url %>
+
+    <% end %>
+
+
+
+
+
+

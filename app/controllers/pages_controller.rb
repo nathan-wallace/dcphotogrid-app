@@ -11,6 +11,10 @@ class PagesController < ApplicationController
 
   def about
   end
+  
+  def instagram
+  	@instagram = Instagram.user_recent_media("natesindc", {:count => 20})
+  end
 
   def video
    end

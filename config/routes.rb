@@ -22,7 +22,9 @@ DCPhotoGrid::Application.routes.draw do
 
   devise_for :users
   match 'users/:id' => 'users#show', as: :user
-
+  
+  get 'login' => 'pages#login'
+  get 'instagram' => 'pages#instagram'
   get 'about' => 'pages#about'
   get 'video' => 'pages#video'
   get 'home' => 'pages#home'

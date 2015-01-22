@@ -40,7 +40,7 @@ gem 'friendly_id', '~> 4.0.9'
 gem 'pony'
 gem 'will_paginate', '3.0.3'
 gem 'bootstrap-will_paginate', '0.0.6'
- 
+gem 'instagram'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
